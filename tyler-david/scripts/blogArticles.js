@@ -1,7 +1,7 @@
 'use strict';
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// this data is used to fill in the structure determined in the index.  the object is Data, the array is everything within the data, the key are the items that stay the same, and the values change item to item.  in this example  Data is the object, than (title, category, author, authorUrl, publishedOn, body) are all keys;  and their corresponding Data is considered the value aspect of the key/value pairs.  
 
 let rawData = [
   {
