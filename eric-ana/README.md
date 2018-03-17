@@ -21,4 +21,9 @@ Lab-02 JQuery
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 * --> 03-17-2018 2:15pm finalized scaffolding, added css and connected, script tags
 * --> 03-17-2018 2:30pm Answered some commented sections in the article.js and blogArticle.js
-* --> 
+* --> 03-17-2018 3:15pm Added the functionality to the toHtml() method in the article.js
+* --> 03-17-2018
+* --> 03-17-2018
+* --> 03-17-2018
+* --> 03-17-2018
+* --> 03-17-2018
