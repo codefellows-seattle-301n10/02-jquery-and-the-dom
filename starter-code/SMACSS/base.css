@@ -7,8 +7,4 @@ header {
   background: rgba(170, 170, 170, 0.308);
   padding: 2%;
 }
-ul {
-  /* this is a hack for collapsing space between inline block elements */
-  font-size: 0;
-  color:orange;
-}
+

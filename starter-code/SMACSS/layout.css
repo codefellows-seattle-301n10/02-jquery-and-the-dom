@@ -20,18 +20,53 @@ a {
 .nav-ul {
   display: none;
 }
-li:hover{
+/* li:hover{
   display: block;
   background-color: darkgrey;
-}
+} */
 
-.hamburger {
+.clearfix:after {
+  clear: both;
+  content: ".";
   display: block;
+  height: 0;
+  line-height: o;
+  visibility: hidden;
 }
 
-@media only screen and (min-width: 640px) {
-  li {
+/* .hamburger {
+  display: block;
+} */
+
+@media only screen and (max-width: 640px) {
+  .hamburger {
     display: block;
+    float:right;
+    font-size: 3em;
+  }
+
+  .nav-ul {
+    display: none;
+    clear: both;
+  }
+
+  nav:hover .nav-ul {
+    display: block;
+    list-style-type: none;
+    margin-left: -5%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 641px) {
+  .nav-ul{
+    display: inline-block;
+    
   }
 
   .hamburger {
