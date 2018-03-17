@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    padding: 3vw;
+}
+
+a:hover {
+    color: red;
+}
