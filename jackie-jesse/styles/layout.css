@@ -1,0 +1,61 @@
+nav {
+    padding-left: 0;
+  }
+  
+  .byline {
+    background-color: white;
+  }
+  
+  .nav-ul{
+    display: none;
+  }
+  
+  nav:hover .nav-ul {
+    display: inline;
+    color: #333;
+  
+  } 
+  
+  nav:hover .nav-ul li{
+    padding: 5% 5% 5% 0;
+  }
+  
+  
+  .icon-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 640px) {
+    .main-nav{
+      padding-bottom: 3%;
+    }
+    
+    .nav-ul {
+      display: inline;
+    }
+  
+    nav ul li {
+      float: left;
+      padding: none;
+      clear: top;
+     
+    }
+  
+    .icon-menu {
+      display: none;
+    }
+  
+    img{
+      width: 60%;
+    }
+  
+  }
