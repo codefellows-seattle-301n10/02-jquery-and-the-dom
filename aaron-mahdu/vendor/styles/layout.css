@@ -1,0 +1,53 @@
+
+
+#ham-menu {
+    display: block;
+    position: relative;
+    top:-100px;
+    right:-450px;
+    font-size: 2em;
+  }
+  #nav-menu {
+    display: none;
+  }
+  nav:hover #nav-menu{
+    display: block;
+  }
+  li{
+    display: block;
+    font-size: 1.4em;
+    text-align: left;
+    padding: 2%;
+    border-bottom: solid 1px rgb(173, 203, 214);
+
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+
+  }
+  .heading-group-h1{
+   padding-top: 20px;
+   padding-bottom: 10px;
+   background-color: rgb(236, 206, 142);
+  }
+  @media only screen and (min-width: 640px) {
+    #nav-menu {
+      display: block;
+    }
+
+    #ham-menu {
+      display: none;
+    }
+    .heading-group-h1{
+      padding-top: 20px;
+      background-color: rgb(236, 206, 142);
+     }
+     li{
+      display: inline-block;
+      font-size: 1.4em;
+      text-align: center;
+      padding: 2%;
+
+    }
+}

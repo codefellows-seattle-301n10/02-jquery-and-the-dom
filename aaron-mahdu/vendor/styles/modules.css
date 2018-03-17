@@ -1,0 +1,17 @@
+.main-nav ul{
+display: none;
+padding: 0;
+list-style: none;
+clear: both;
+}
+
+.main-nav:hover ul{
+display: block;
+}
+
+.pull-right{
+    float: right;
+}
+.byline address{
+    display: inline-block;
+}
