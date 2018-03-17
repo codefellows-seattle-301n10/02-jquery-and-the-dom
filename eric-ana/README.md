@@ -19,5 +19,6 @@ Lab-02 JQuery
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
---> 03-17-2018 2:15pm finalized scaffolding, added css and connected, script tags
---> 
+* --> 03-17-2018 2:15pm finalized scaffolding, added css and connected, script tags
+* --> 03-17-2018 2:30pm Answered some commented sections in the article.js and blogArticle.js
+* --> 
