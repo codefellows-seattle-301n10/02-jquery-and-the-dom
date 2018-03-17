@@ -1,7 +1,7 @@
 'use strict';
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// rawData is an array that holds multiple objects with key/value pairs. We use rawData when creating new instances of the Article constructor function. We then are able to access each instance of Article and display its information (which is done in blog.js) on our blog app. 
 
 let rawData = [
   {
