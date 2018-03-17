@@ -1,0 +1,10 @@
+img {
+    max-width:100%;
+    float: right;
+}
+.template {
+    display: none;
+}
+.byline {
+    display: -webkit-inline-box;
+}
