@@ -1,6 +1,6 @@
 # Project Name
-
-**Author**: Your Name Goes Here
+Lab-02 JQuery
+**Authors**: Ana Ortega and Eric Singleton
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
@@ -19,4 +19,5 @@
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
+--> 03-17-2018 2:15pm finalized scaffolding, added css and connected, script tags
+--> 
