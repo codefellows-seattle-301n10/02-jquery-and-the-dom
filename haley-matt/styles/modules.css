@@ -54,6 +54,10 @@ nav:hover .nav-ul {
   display: block;
 } 
 
+.template{
+  display: none;
+}
+
 @media only screen and (min-width: 640px) {
   .nav-ul {
     display: block;
