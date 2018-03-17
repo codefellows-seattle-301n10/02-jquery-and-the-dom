@@ -1,0 +1,107 @@
+.site-header {
+    background: lightyellow;
+    padding: 1.5%;
+  }
+
+  .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+.heading-group-h1 {
+    float: left;
+    width: 90%;
+    margin-left: 20px;
+}
+nav {
+    clear: left;
+    width: 100%;
+    margin: 0px auto 0px auto;
+}
+
+img {
+    max-width: 100%;
+    float: right;
+}
+
+li {
+    border-bottom: 1px solid lightgray;
+    margin: 5px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-ul {
+    display: none;
+    list-style: none;
+  }
+  
+.main-nav:hover .menu-ul{
+    display: block;
+    clear: left;
+  }
+.main-nav:hover nav {
+   background-color: black;
+}
+
+  .icon-menu {
+    display: block;
+    float:right; 
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+}
+
+main header {
+    padding-top: 45px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+a:link {
+    color: gray;
+}
+
+.byline, address, time {
+    color: grey;
+    display: inline-block;
+}
+
+footer {
+    border: 2px purple solid;
+}
+
+@media only screen and (min-width: 640px) {
+    .heading-group-h1 {
+        float: left;
+        width: 90%;
+        margin-left: 50px;
+    }
+    
+    .menu-ul {
+        clear: left;
+        display: block;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    li {
+        display: inline;
+        margin-left: 15px;
+    }
+  
+    .icon-menu {
+      display: none;
+    }
+  }
+
+
