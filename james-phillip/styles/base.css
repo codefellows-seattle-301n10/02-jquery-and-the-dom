@@ -1,0 +1,10 @@
+
+.site-header {
+    background-color: rgb(253, 236, 205);
+    display: block;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+}
