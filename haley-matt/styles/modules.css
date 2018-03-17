@@ -1,0 +1,75 @@
+ul {
+  font-size: 0;
+  padding-left: 1%;
+}
+
+li {
+  font-size: 1.5rem;
+  letter-spacing: normal;
+  list-style: none;
+  display: inline-block;
+  padding: 1%;
+}
+
+address a{
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: gray;
+}
+.byline{
+  color: gray;
+  display: inline-block;
+}
+
+.article-body{
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.pull-right{
+  float: right;
+  max-width: 100%;
+}
+
+.pull-left{
+  float: left;
+  max-width: 100%;
+} 
+
+.nav-ul {
+  display: none;
+}
+.hamburger:hover {
+  display: block;
+}
+
+#ham-menu {
+  float: right;
+}
+nav:hover .nav-ul {
+  display: block;
+} 
+
+@media only screen and (min-width: 640px) {
+  .nav-ul {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+}
+
+address a{
+  color: gray;
+  text-decoration: none;
+}

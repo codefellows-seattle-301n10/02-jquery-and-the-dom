@@ -1,0 +1,25 @@
+header{
+  background: #ffe680;
+  padding: 1.5%;
+}
+
+.title{
+  background-color: white;
+}
+
+
+address{
+  display: inline-block;
+}
+
+time{
+  display: inline-block;
+}
+
+
+#nav-menu {
+  padding: 0;
+}
+
+
+
