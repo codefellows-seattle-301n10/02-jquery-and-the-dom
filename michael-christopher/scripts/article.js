@@ -3,20 +3,28 @@
 let articles = [];
 
 // COMMENT: What is the purpose of the following function? Why is its name capitalized? Explain the context of "this" within the function. What does "rawDataObj" represent?
-// PUT YOUR RESPONSE HERE
+// This function instantiates the raw data (blog entry) objects.
 
 function Article (rawDataObj) {
-  // TODO: Use the JS object that is passed in to complete this constructor function:
+  // TODONE: Use the JS object that is passed in to complete this constructor function:
   // Save ALL the properties of `rawDataObj` into `this`
+  this.title = rawDataObj.title;
+  this.category = rawDataObj.category;
+  this.author = rawDataObj.author;
+  this.authorUrl = rawDataObj.authorUrl;
+  this.publishedOn = rawDataObj.publishedOn;
+  this.body = rawDataObj.body;
+
 }
 
 Article.prototype.toHtml = function() {
-  // COMMENT: What is the benefit of cloning the article? (see the jQuery docs)
-  // PUT YOUR RESPONSE HERE
+  // COMMENTED: What is the benefit of cloning the article? (see the jQuery docs)
+  // Creates a deep copy of the template for each recurring blog entry.
 
   let $newArticle = $('article.template').clone();
-  /* TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
+  /* TODONE: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
 
+  $newArticle.removeClass('template')
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
 
@@ -27,6 +35,11 @@ Article.prototype.toHtml = function() {
       3. article title,
       4. article body, and
       5. publication date. */
+
+  $newArticle.find('h1').text(this.title);
+  $newArticle.find('.byline a').text(this.author);
+  $newArticle.find('.byline a').attr('href', this.authorUrl);
+  $newArticle.find('.article-body').html(this.body);
 
   // REVIEW: Display the date as a relative number of 'days ago'
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
@@ -41,11 +54,17 @@ rawData.sort(function(a,b) {
 
 // TODO: Refactor these for loops using the .forEach() array method.
 
-for(let i = 0; i < rawData.length; i++) {
-  articles.push(new Article(rawData[i]));
-}
+// for(let i = 0; i < rawData.length; i++) {
+//   articles.push(new Article(rawData[i]));
+// }
+rawData.forEach(function(blogArticle) {
+  articles.push(new Article(blogArticle));
+});
 
-for(let i = 0; i < articles.length; i++) {
-  // un-comment when toHTML in good enough shape to avoid terrible browser hang
-  // $('#articles').append(articles[i].toHtml());
-}
+// for(let i = 0; i < articles.length; i++) {
+//   // un-comment when toHTML in good enough shape to avoid terrible browser hang
+//   $('#articles').append(articles[i].toHtml());
+// }
+articles.forEach(function(x) {
+  $('#articles').append(x.toHtml());
+});

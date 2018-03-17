@@ -4,3 +4,7 @@ body {
 main {
     padding: 3vw;
 }
+
+a:hover {
+    color: red;
+}
