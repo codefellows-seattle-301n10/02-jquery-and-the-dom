@@ -6,21 +6,6 @@ nav {
     background-color: white;
   }
   
-  .nav-ul{
-    display: none;
-  }
-  
-  nav:hover .nav-ul {
-    display: inline;
-    color: #333;
-  
-  } 
-  
-  nav:hover .nav-ul li{
-    padding: 5% 5% 5% 0;
-  }
-  
-  
   .icon-menu {
     display: block;
     position: fixed;
@@ -30,17 +15,13 @@ nav {
   }
   
   img {
-    display: block;
-    width: 100%;
+    float: right;
+    overflow: auto;
   }
   
-  @media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) {
     .main-nav{
       padding-bottom: 3%;
-    }
-    
-    .nav-ul {
-      display: inline;
     }
   
     nav ul li {
@@ -54,8 +35,11 @@ nav {
       display: none;
     }
   
-    img{
-      width: 60%;
+    img {
+        float: right;
+        content: "";
+        clear: both;
+        display: table;
+        max-width: 100%;
     }
-  
-  }
+}

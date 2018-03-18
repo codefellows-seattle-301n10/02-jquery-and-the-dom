@@ -41,14 +41,14 @@ Article.prototype.toHtml = function() {
       $newArticle.find('section.article-body').html(this.body);
       $newArticle.find('.byline time').html(this.publishedOn);
 
-  // REVIEW: Display the date as a relative number of 'days ago'
+  // REVIEWED: Display the date as a relative number of 'days ago'
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
   $newArticle.append('<hr>');
   return $newArticle;
 };
 
 rawData.sort(function(a,b) {
-  // REVIEW: Take a look at this sort method; This may be the first time we've seen it. Look at the docs and think about how the dates would be sorted if the callback were not included in this method.
+  // REVIEWED: Take a look at this sort method; This may be the first time we've seen it. Look at the docs and think about how the dates would be sorted if the callback were not included in this method.
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 

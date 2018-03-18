@@ -1,7 +1,7 @@
 'use strict';
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// The data is used within the object constructor.  Each object within the array is created as an instance where the object properties are used as the key value pairs within the constructor.
 
 let rawData = [
   {
