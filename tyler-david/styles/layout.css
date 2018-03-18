@@ -6,7 +6,7 @@ header {
     max-width: 100%;
   }
   ul {
-    /*TODO this is a hack for collapsing space between inline block elements */
+    /* this is a hack for collapsing space between inline block elements */
     font-size: 20;
   }
 

@@ -33,7 +33,7 @@ Article.prototype.toHtml = function() {
   //     3. article title,
   //     4. article body, and
   //     5. publication date. *//
-$newArticle.find(h1).text(this.title);
+$newArticle.find('h1').text(this.title);
 $newArticle.find('.byline a').text(this.author);
 $newArticle.find('.byline a').attr('href', this.authorUrl);
 
@@ -55,7 +55,7 @@ rawData.sort(function(a,b) {
 
 // : Refactor these for loops using the .forEach() array method.
 
-rawData.forEach(funtion(rawData) {
+rawData.forEach(function(rawData) {
   articles.push(new Article(rawData));
 });
 articles.forEach(function(articles) {
