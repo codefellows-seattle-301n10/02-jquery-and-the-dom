@@ -18,7 +18,7 @@ function Article (rawDataObj) {
 
 Article.prototype.toHtml = function() {
   // COMMENT: What is the benefit of cloning the article? (see the jQuery docs)
-  //
+  // clone() method makes a copy of selected elements, including child nodes, text and attributes.
 
   let $newArticle = $('article.template').clone();
   /* TODONE: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
