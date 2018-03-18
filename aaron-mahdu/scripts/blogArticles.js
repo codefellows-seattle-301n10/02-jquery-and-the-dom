@@ -1,7 +1,7 @@
 'use strict';
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// rawData is an array of objects with multiple sets of key value pairs. Values from these objects can be assigned to constructor object to make use of the data to load it on webpage.
 
 let rawData = [
   {
