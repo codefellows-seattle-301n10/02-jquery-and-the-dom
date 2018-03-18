@@ -22,8 +22,13 @@ Article.prototype.toHtml = function() {
 
   let $newArticle = $('article.template').clone();
   // /TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
+<<<<<<< HEAD
   $newArticle.removeClass('template')
 
+=======
+  
+  $newArticle.removeClass('template')
+>>>>>>> 1ab53a65b4bab3cc89f3f91101af03dc60ecc625
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
 
@@ -34,15 +39,15 @@ Article.prototype.toHtml = function() {
   //     3. article title,
   //     4. article body, and
   //     5. publication date. *//
-$newArticle.find('h1').text(this.title);
-$newArticle.find('.byline a').text(this.author);
-$newArticle.find('.byline a').attr('href', this.authorUrl);
-$newArticle.find('section.article-body').html(this.body);
-$newArticle.find('.byline time').text(this.publishedOn);
+  $newArticle.find('h1').text(this.title);
+  $newArticle.find('.byline a').text(this.author);
+  $newArticle.find('.byline a').attr('href', this.authorUrl);
+  $newArticle.find('section.article-body').html(this.body);
+  $newArticle.find('.byline time').text(this.publishedOn);
 
 // REVIEW: Display the date as a relative number of 'days ago'
-$newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-$newArticle.append('<hr>');
+  $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+  $newArticle.append('<hr>');
   return $newArticle;
 };
 
@@ -64,4 +69,10 @@ articles.forEach(function(articles) {
 // }
 // for (let i = 0; i < articles.length; i++) {
   // un-comment when toHTML in good enough shape to avoid terrible browser hang
+<<<<<<< HEAD
 $('#articles').append(articles[i].toHtml());
+=======
+$('#articles').append(articles[i].toHtml());
+
+
+>>>>>>> 1ab53a65b4bab3cc89f3f91101af03dc60ecc625
