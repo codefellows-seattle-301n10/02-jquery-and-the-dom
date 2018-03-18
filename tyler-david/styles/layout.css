@@ -1,0 +1,52 @@
+header {
+    background: #aaa;
+    padding: 1.5%;
+  }
+  .pull-left, .pull-right {
+    max-width: 100%;
+  }
+  ul {
+    /*TODOthis is a hack for collapsing space between inline block elements */
+    font-size: 20;
+  }
+
+  nav:hover .nav-ul {
+    display: block;
+  }  .nav-ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .hamburger:hover .nav-ul{
+    display: block;
+  }
+
+li {
+  font-size: 1.5rem;
+  letter-spacing: normal;
+  list-style: none;
+  display: inline-block;
+  padding: 1%;
+  border: 2px solid black;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
+
+a {
+  text-decoration: none;
+  color: #71f;
+}
+
+ @media only screen and (min-width: 640px) {
+    .nav-ul {
+      display: block;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  } 
