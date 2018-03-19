@@ -1,0 +1,10 @@
+html, body {
+    width: 100%;
+    font-family: helvetica;
+    color: rgb(87, 84, 84);
+  }
+  
+  header {
+    background: #FFECA0;
+    padding: 1.5%;
+  }
