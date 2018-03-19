@@ -7,12 +7,12 @@
     border: none;
     margin-left: none;
     padding-left: none;
+    text-align: left;
     border-bottom: solid 1px gray;
 }
 
 #nav-menu:hover li{
     display: block;
-    margin-left: none;
     padding-left: none;
     border-left: none;
     border-bottom: solid 1px gray;
@@ -59,16 +59,28 @@ a {
 }
   
 @media only screen and (min-width: 640px){
-    #nav-menu li{
-        display:block;
-        border-bottom: transparent;
-    }
-
+  
     #nav-menu{
         padding-bottom: 7%;
+      
+    }
+
+    #nav-menu li{
+        display: block;
+        border-bottom: transparent;
     }
 
     .template{
         display: none;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    img{
+        float: right;
+        max-width: 20%;
+        max-height: 20%;
     }
 }
