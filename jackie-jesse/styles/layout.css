@@ -25,13 +25,6 @@ nav {
       text-align: left;
     }
   
-    nav ul li {
-      display: block;
-      float: left;
-      padding: none;
-      clear: top;
-    }
-  
     .icon-menu {
       display: none;
     }
