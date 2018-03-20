@@ -10,7 +10,7 @@ header {
     font-size: 20;
   }
 
-  nav:hover .nav-ul {
+  nav:active .nav-ul {
     display: block;
   }  .nav-ul {
     display: none;
