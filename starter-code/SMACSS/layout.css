@@ -1,0 +1,37 @@
+img {
+     vertical-align: middle;
+     width:220px;
+     display: block;
+     margin: auto;
+
+}
+
+  ul {
+    /* this is a hack for collapsing space between inline block elements */
+    font-size: 0;
+  }
+  
+  li {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    list-style: none;
+    display: inline-block;
+    padding: 1%;
+  }
+
+  
+
+  a {
+    text-decoration: none;
+    color: #71f;
+  }
+  
+  #nav-menu {
+      float: left;
+      padding: 0;
+  }
+  
+  
+  #ham-menu {
+      float: right;
+  }
