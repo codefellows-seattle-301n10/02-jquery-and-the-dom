@@ -24,10 +24,7 @@ Article.prototype.toHtml = function() {
   // /TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
 
   $newArticle.removeClass('template')
-<<<<<<< HEAD
-=======
 
->>>>>>> ff12cb8319c0bd523be54efc7521179673effcd3
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
 
@@ -67,10 +64,5 @@ articles.forEach(function(articles) {
 //   articles.push(new Article(rawData[i]));
 // }
 // for (let i = 0; i < articles.length; i++) {
-<<<<<<< HEAD
-// un-comment when toHTML in good enough shape to avoid terrible browser hang
-
-=======
   // un-comment when toHTML in good enough shape to avoid terrible browser hang
->>>>>>> ff12cb8319c0bd523be54efc7521179673effcd3
 $('#articles').append(articles[i].toHtml());
