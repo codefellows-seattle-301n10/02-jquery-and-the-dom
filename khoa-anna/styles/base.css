@@ -1,0 +1,15 @@
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+}
