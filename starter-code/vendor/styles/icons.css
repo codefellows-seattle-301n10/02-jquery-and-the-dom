@@ -42,9 +42,9 @@
 .icon-power:before {
 	content: "\e90a";
 }
-/* .icon-menu:before {
+.icon-menu:before {
 	content: "\e902";
-} */
+}
 .icon-link:before {
 	content: "\e903";
 }

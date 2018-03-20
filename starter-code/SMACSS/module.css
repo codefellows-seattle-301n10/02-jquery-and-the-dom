@@ -1,28 +1,31 @@
 .pull-left {
   max-width: 100%;
 }
-/* 
-.main-nav ul {
+
+
+.site-header {
+  background: #f8d1a4;
+  padding: 1.5%;
+}
+
+.hamburger {
   display: none;
-  padding: 0;
-  list-style:none;
-  clear: both;
 }
 
-.main-nav hover ul {
-  display: block;
-  
-}
+@media only screen and (max-width: 640px) {
+  .hamburger {
+    display: block;
+    float:right;
+    font-size: 12em;
+  }
 
-.main-nav li {
-  margin-right: .4em;
-  font-size: 1.5em;
-  padding: .5em .2em;
-  border-bottom: 1px solid #ccc;
-  
-}
+  .nav-ul {
+    display: none;
+    clear: both;
+  }
 
-#filters {
-  padding: 0;
-  list-style: none;
-} */
+  nav:hover .nav-ul {
+    display: block;
+    list-style-type: none;
+    margin-left: -5%;
+ } 
