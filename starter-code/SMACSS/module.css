@@ -1,6 +1,41 @@
-.pull-left {
-  max-width: 100%;
+
+@media only screen and (max-width: 640px){
+li{
+  border-bottom: gray solid 1px;
+  display: block;
+  }
 }
+
+.nav-ul {
+  width: 100%;
+display: none;
+}
+
+.template {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  font-size: 2rem;
+}
+
+nav:hover .nav-ul {
+  display: block;
+} 
+
+@media only screen and (min-width: 640px) {
+  .nav-ul {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+.byline  address {
+  display: inline-block;
+}
+
 
 .clearfix::after {
   content: "";
@@ -12,4 +47,3 @@
   background: #f8d1a4;
   padding: 1.5%;
 }
-

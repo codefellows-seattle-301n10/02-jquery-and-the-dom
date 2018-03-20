@@ -1,47 +1,34 @@
-ul {
-  /* this is a hack for collapsing space between inline block elements */
-  font-size: 0;
-}
-li {
-  font-size: 1.5rem;
-  letter-spacing: normal;
-  list-style: none;
-  display: inline-block;
-  padding: 1%;
-  
+img {
+    float: right;
+    overflow: auto;
 }
 
-a {
-  text-decoration: none;
-  color: #71f;
-}
-
-@media only screen and (max-width: 640px){
-  li{
-    border-bottom: gray solid 1px;
-    display: block;
-    }
+  ul {
+    /* this is a hack for collapsing space between inline block elements */
+    font-size: 0;
   }
   
-  .nav-ul {
-    width: 100%;
-  display: none;
-  }
-  
-  .template {
-    display: none;
-  }
-  
-  .hamburger {
-    display: block;
-    font-size: 1.3rem;
-  }
-  
-  nav:hover .nav-ul {
-    display: block;
-    background-color: darkgrey;
-  } 
-
-  .byline  address {
+  li {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    list-style: none;
     display: inline-block;
+    padding: 1%;
+  }
+
+  
+
+  a {
+    text-decoration: none;
+    color: #71f;
+  }
+  
+  #nav-menu {
+      float: left;
+      padding: 0;
+  }
+  
+  
+  #ham-menu {
+      float: right;
   }
