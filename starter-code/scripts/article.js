@@ -56,8 +56,8 @@ rawData.sort(function(a,b) {
 
 // TODONE: Refactor these for loops using the .forEach() array method.
 
-rawData.forEach(function(rawDataObj){
-  articles.push(new Article(rawDataObj));
+rawData.forEach(function(rawArticleObj){
+  articles.push(new Article(rawArticleObj));
 })
 
 articles.forEach(function(articles){

@@ -8,68 +8,30 @@ li {
   list-style: none;
   display: inline-block;
   padding: 1%;
-  /* border: 2px solid black; */
-  /* border-top-right-radius: 20%;
-  border-top-left-radius: 20%; */
- 
+  
 }
 a {
   text-decoration: none;
   color: #71f;
 }
-ul.nav-ul {
-  display: inline-block;
-  margin-left: -30px;
-  display: initial;
+.nav-ul {
+  display: none;
 }
-li:hover{
+nav:hover .nav-ul {
   display: block;
   background-color: darkgrey;
 }
 
-/* .clearfix:after {
-  clear: both;
-  content: ".";
+/* .hamburger {
   display: block;
-  height: 0;
-  line-height: o;
-  visibility: hidden;
 } */
 
-.hamburger {
-  display: none;
-}
-
-@media only screen and (max-width: 640px) {
-  .hamburger {
-    display: block;
-    float:right;
-    font-size: 12em;
-  }
-
+@media only screen and (min-width: 640px) {
   .nav-ul {
-    display: none;
-    clear: both;
-  }
-
-  nav:hover .nav-ul {
     display: block;
-    list-style-type: none;
-    margin-left: -5%;
-  }
-
-
-}
-
-
-/* 
-@media only screen and (min-width: 641px) {
-  .nav-ul{
-    display: inline-block;
-    
   }
 
   .hamburger {
     display: none;
   }
-} */
+}
