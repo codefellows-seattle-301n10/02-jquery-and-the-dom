@@ -1,5 +1,5 @@
-header {
-  background: #aaa;
+.site-header {
+  background: #FFE9AD;
   padding: 1.5%;
 }
 
@@ -12,7 +12,7 @@ ul {
   font-size: 20;
 }
 
-nav:active .nav-ul {
+nav:hover .nav-ul {
   display: block;
 }
   
@@ -22,6 +22,7 @@ nav:active .nav-ul {
 
 .hamburger {
   display: block;
+  float:right;
 }
 
 .nav-ul {
@@ -33,19 +34,24 @@ nav:active .nav-ul {
 }
 
 li {
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   letter-spacing: normal;
   list-style: none;
-  display: inline-block;
+  display: block;
   padding: 1%;
-  border: 2px solid black;
-  border-top-right-radius: 20%;
-  border-top-left-radius: 20%;
 }
 
 a {
   text-decoration: none;
-  color: #71f;
+  color: gray;
+}
+
+main {
+  padding: 2.5%;
+}
+
+.byline a{
+  display: inline;
 }
 
 @media only screen and (min-width: 640px) {
@@ -55,5 +61,10 @@ a {
   
   .hamburger {
     display: none;
+  }
+
+  li {
+    font-size: 1.5em;
+    display: inline-block;
   }
 } 
