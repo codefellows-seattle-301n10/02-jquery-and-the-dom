@@ -51,14 +51,14 @@ rawData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-// TODO: Refactor these for loops using the .forEach() array method.
+// TODONE: Refactor these for loops using the .forEach() array method.
 
 
-rawData.forEach(function(rawDataObj) {
+rawData.forEach(function(rawData) {
   articles.push(new Article(rawData));
 });
 
 articles.forEach(function(articles) {
   // un-comment when toHTML in good enough shape to avoid terrible browser hang
-  $('#articles').append(articles[i].toHtml());
+  $('#articles').append(articles.toHtml());
 })

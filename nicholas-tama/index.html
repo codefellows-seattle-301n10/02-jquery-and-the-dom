@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>Lab 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="vender/styles/normalize.css">
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="vender/styles/icons.css">
+  <link rel="stylesheet" href="vendor/styles/icons.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
@@ -38,7 +38,7 @@
             By <address><a href="">Author Name</a></address>
             published <time pubdate datetime="2000-01-01">Publish Time</time>
             <!-- COMMENT: What is the <time> HTML element used for? How does this connect to our JS files?  -->
-            <!-- PUT YOUR RESPONSE HERE -->
+            <!-- It allows developer to be able to add a human-readable date and time. When using the Js file the jquery newArticle pulls from rawData the data and time the articles where published On. Also displays the date as relative number of days ago the artcie was posted.  -->
           </div>
         </header>
         <section class="article-body"></section>
@@ -49,6 +49,13 @@
     &copy; 2017 Code Fellows | Static Blog | Happy Ipsum!
   </footer>
 <!-- // TODO: Include any/all needed script tags -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="scripts/blogArticles.js"></script>
+<script src="scripts/article.js"></script>
+
 
 </body>
 </html>
