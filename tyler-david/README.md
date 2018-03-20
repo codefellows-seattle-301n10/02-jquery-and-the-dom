@@ -11,7 +11,9 @@ As a developer I am using jQuerys library to create a functionl effecient way to
 As a user would need to create an array similar to the rawData that is used in this example.  that is the information that we will than use to fill in our web page.  They would need to than create a constructor function to pull the information off of the rawData.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+we put the html and body tags in a base.css 
+we put template none and clearfix in the module
+layout helped move the mobile around (mobile first) and controlled the hamburger action
 
 ## Change Log
 
