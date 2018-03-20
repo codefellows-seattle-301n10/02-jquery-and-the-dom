@@ -3,7 +3,7 @@
 let articles = [];
 
 // COMMENTed: What is the purpose of the following function? Why is its name capitalized? Explain the context of "this" within the function. What does "rawDataObj" represent?
-// it is capitalized because it's a constructor function and those always need capitaliation.  this is used to select different attributes attached to the constructor function such as title author authorUrl.  "rawDataObj" contains all of our information that we are going to need to call on to fill out the html page 
+// it is capitalized because it's a constructor function and those always need capitaliation.  this is used to select different attributes attached to the constructor function such as title author authorUrl.  "rawDataObj" contains all of our information that we are going to need to call on to fill out the html page
 
 function Article (rawDataObj) {
   //  TODO : Use the JS object that is passed in to complete this constructor function:
@@ -24,6 +24,10 @@ Article.prototype.toHtml = function() {
   // /TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
 
   $newArticle.removeClass('template')
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff12cb8319c0bd523be54efc7521179673effcd3
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
 
@@ -57,12 +61,16 @@ rawData.forEach(function(rawData) {
   articles.push(new Article(rawData));
 });
 articles.forEach(function(articles) {
-  $('#articles').append(articles.toHtml()); 
+  $('#articles').append(articles.toHtml());
 });
 // for (let i = 0; i < rawData.length; i++) {
 //   articles.push(new Article(rawData[i]));
 // }
 // for (let i = 0; i < articles.length; i++) {
+<<<<<<< HEAD
 // un-comment when toHTML in good enough shape to avoid terrible browser hang
 
+=======
+  // un-comment when toHTML in good enough shape to avoid terrible browser hang
+>>>>>>> ff12cb8319c0bd523be54efc7521179673effcd3
 $('#articles').append(articles[i].toHtml());
