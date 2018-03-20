@@ -5,7 +5,10 @@ li{
   display: block;
   }
 }
-
+main {
+  max-width: 960px;
+  margin: auto;
+}
 .nav-ul {
   width: 100%;
 display: none;

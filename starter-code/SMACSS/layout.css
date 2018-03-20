@@ -1,6 +1,9 @@
 img {
-    float: right;
-    overflow: auto;
+     vertical-align: middle;
+     width:220px;
+     display: block;
+     margin: auto;
+
 }
 
   ul {
