@@ -11,7 +11,7 @@ function Article (rawDataObj) {
   this.title = rawDataObj.title,
   this.category = rawDataObj.category,
   this.author = rawDataObj.author,
-  this.authorUrl = rawDataObj.aurthorUrl,
+  this.authorUrl = rawDataObj.authorUrl,
   this.publishedOn = rawDataObj.publishedOn,
   this.body = rawDataObj.body
 }
@@ -65,4 +65,3 @@ articles.forEach(function(articles) {
 // }
 // for (let i = 0; i < articles.length; i++) {
   // un-comment when toHTML in good enough shape to avoid terrible browser hang
-$('#articles').append(articles[i].toHtml());
