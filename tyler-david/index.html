@@ -14,25 +14,26 @@
 <body>
   <header class="site-header clearfix">
     <section class="heading-group-h1">
-        <div id="ham-menu" class="icon-menu hamburger"></div>
       <h1>
         Kilovolt Blog!
       </h1>
       <h2>The shocking power of static pages</h2>
-      <nav class="main-nav">
-      <ul id="nav-menu" class="nav-ul">
-          <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
-          <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
-          <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
-          <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
-        </ul>
-      </nav>
     </section>
+    <nav class="main-nav">
+      <!-- <div class="icon-menu"></div> -->
+      <div id="ham-menu" class="icon-menu hamburger"></div>
+      <ulid ="nav-menu" class="nav-ul">
+        <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
+        <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
+        <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
+        <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section id="articles">
       <article class="template" data-category="cat">
-        <!-- <header> -->
+        <header>
           <h1>Title</h1>
           <div class="byline">
             By <address><a href="">Author Name</a></address>
@@ -40,7 +41,7 @@
             <!-- COMMENTed: What is the <time> HTML element used for? How does this connect to our JS files?  -->
             <!-- <time> HTML element is used to hold the place on on the HTML doc.  the js than uses that element to make a formula counting down the number of days. -->
           </div>
-        <!-- </header> -->
+        </header>
         <section class="article-body"></section>
       </article>
     </section>

@@ -1,5 +1,5 @@
-.site-header {
-  background: #FFE9AD;
+header {
+  background: #aaa;
   padding: 1.5%;
 }
 
@@ -8,7 +8,20 @@
 }
   
 ul {
+  /* this is a hack for collapsing space between inline block elements */
   font-size: 20;
+}
+
+nav:active .nav-ul {
+  display: block;
+}
+  
+.nav-ul {
+  display: none;
+}
+
+.hamburger {
+  display: block;
 }
 
 .nav-ul {
@@ -20,21 +33,19 @@ ul {
 }
 
 li {
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   letter-spacing: normal;
   list-style: none;
-  display: block;
+  display: inline-block;
   padding: 1%;
-  
+  border: 2px solid black;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%;
 }
 
 a {
   text-decoration: none;
-  color: gray;
-}
-
-main {
-  padding: 2.5%;
+  color: #71f;
 }
 
 @media only screen and (min-width: 640px) {
@@ -44,10 +55,5 @@ main {
   
   .hamburger {
     display: none;
-  }
-
-  li {
-    font-size: 1.5em;
-    display: inline-block;
   }
 } 
