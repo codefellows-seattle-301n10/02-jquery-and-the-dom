@@ -5,15 +5,17 @@
   <title>Lab 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="vendor/styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="SMACSS/base.css">
   <link rel="stylesheet" href="vendor/styles/icons.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/modules.css">
+  <link rel="stylesheet" href="SMACSS/layout.css">
+  <link rel="stylesheet" href="SMACSS/module.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
 </head>
 <body>
-  <header class="site-header clearfix">
-    <section class="heading-group-h1">
+    <header class="site-header clearfix">
+        <nav class="main-nav">
+        <div id="ham-menu" class="icon-menu hamburger"></div>
+      <section class="heading-group-h1">
       <h1>
         Kilovolt Blog!
       </h1>
@@ -21,7 +23,8 @@
     </section>
     <nav class="main-nav">
       <div class="icon-menu"></div>
-      <ul>
+      <!-- <div id="ham-menu" class="icon-menu hamburger"></div> -->
+      <ul class = "nav-ul">
         <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
         <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
         <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
@@ -33,10 +36,10 @@
     <section id="articles">
       <article class="template" data-category="cat">
         <header>
-          <h1>Title</h1>
+          <h1></h1>
           <div class="byline">
-            By <address><a href="">Author Name</a></address>
-            published <time pubdate datetime="2000-01-01">Publish Time</time>
+          <address><a href=""></a></address>
+            <time pubdate datetime="2000-01-01"></time>
             <!-- COMMENT: What is the <time> HTML element used for? How does this connect to our JS files?  -->
             <!-- PUT YOUR RESPONSE HERE -->
           </div>
@@ -48,7 +51,12 @@
   <footer>
     &copy; 2017 Code Fellows | Static Blog | Happy Ipsum!
   </footer>
-<!-- // TODO: Include any/all needed script tags -->
-
+<!-- // TODONE: Include any/all needed script tags -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="scripts/blogArticles.js"></script>
+<script src="scripts/article.js"></script>
 </body>
 </html>

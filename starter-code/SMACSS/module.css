@@ -1,0 +1,31 @@
+.pull-left {
+  max-width: 100%;
+}
+
+
+.site-header {
+  background: #f8d1a4;
+  padding: 1.5%;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .hamburger {
+    display: block;
+    float:right;
+    font-size: 12em;
+  }
+
+  .nav-ul {
+    display: none;
+    clear: both;
+  }
+
+  nav:hover .nav-ul {
+    display: block;
+    list-style-type: none;
+    margin-left: -5%;
+ } 
