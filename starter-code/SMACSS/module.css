@@ -1,0 +1,27 @@
+.pull-left {
+  max-width: 100%;
+  
+
+}
+<<<<<<< HEAD
+
+/* .main-nav ul {
+  display: none;
+  padding: 0;
+  list-style:none;
+  clear: both;
+}
+=======
+>>>>>>> 024341193b953881241f081f9f1652ac08e96f64
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-header {
+  background: #f8d1a4;
+  padding: 1.5%;
+}
+
