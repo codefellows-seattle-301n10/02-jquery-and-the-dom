@@ -1,0 +1,33 @@
+nav {
+    padding-left: 0;
+  }
+  
+  .byline {
+    background-color: white;
+  }
+  
+  .icon-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+  }
+  
+  img {
+    float: right;
+    overflow: auto;
+  }
+  
+@media only screen and (min-width: 640px) {
+    .main-nav{
+      padding-bottom: 3%;
+      text-align: left;
+    }
+  
+    .icon-menu {
+      display: none;
+    }
+  
+    
+}
