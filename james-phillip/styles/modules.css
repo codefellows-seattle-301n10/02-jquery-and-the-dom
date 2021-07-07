@@ -1,0 +1,38 @@
+.main-nav {
+    position: relative;
+    display: inline-block;
+}
+.main-nav:hover .content {
+    display: inline;
+    /* styling rules for dropdown menu go here */
+}
+.content {
+    display: none;
+}
+
+.template {
+    display: none;
+}
+/* .main-nav img {
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+.main-nav-img {
+    display: block;
+    float: left;
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+}
+
+
+@media only screen and (min-width: 640px) {
+    .main-nav-img {
+        display: none;
+    }
+    .content {
+        display: inline;
+    }
+}
